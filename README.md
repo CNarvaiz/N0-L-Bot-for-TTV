@@ -9,7 +9,7 @@ There isn't much here yet, especially here in the readme.
 Current Functionality and Goals
 - [X] Responds to basic commands with text response
 - [X] Does not infinite loop on herself
-- [ ] Case insensitive commands
+- [X] Case insensitive commands (Tentatively checked)
 - [ ] Uptime check ~~Yes I'm aware it's a function on twitch already~~
 - [ ] Subscription/Donation Alerts
 - [ ] HTML object creation and control
