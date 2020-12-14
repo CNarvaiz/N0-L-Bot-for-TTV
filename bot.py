@@ -7,7 +7,9 @@ from twitchio import Client
 from datetime import datetime, timedelta
 from time import sleep
 
-
+"""
+The parameters for bot are taken from the .env file. Naming must be consistent.
+"""
 bot = commands.Bot(
 	irc_token=os.environ['TMI_TOKEN'],
 	client_id=os.environ['CLIENT_ID'],
@@ -20,10 +22,13 @@ bot = commands.Bot(
 async def event_ready():
 	print(f"{os.environ['BOT_NICK']} is online!")
 	ws = bot._ws
-	await ws.send_privmsg(os.environ['CHANNEL'], f"/me beeps cheerily as it comes online!")
+	await ws.send_privmsg(os.environ['CHANNEL'], f"/me beeps cheerily as she comes online!")
 
 @bot.event
 async def event_message(ctx):
+	"""
+	Checks if the bot is the author of event_message and discards input if true.
+	"""
 	if ctx.author.name.casefold() == os.environ['BOT_NICK'].casefold():
 		return
 
