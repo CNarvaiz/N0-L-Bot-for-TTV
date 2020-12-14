@@ -26,6 +26,7 @@ async def event_ready():
 
 @bot.event
 async def event_message(ctx):
+	ctx.content=ctx.content.casefold()
 	"""
 	Checks if the bot is the author of event_message and discards input if true.
 	"""
