@@ -10,6 +10,7 @@ Current Functionality and Goals
 - [X] Responds to basic commands with text response
 - [X] Does not infinite loop on herself
 - [X] Case insensitive commands (Tentatively checked)
+- [X] Master Branch now hosted on Heroku! Updates must be manually re-deployed currently.
 - [ ] Uptime check ~~Yes I'm aware it's a function on twitch already~~
 - [ ] Subscription/Donation Alerts
 - [ ] HTML object creation and control
