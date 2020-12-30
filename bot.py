@@ -26,16 +26,17 @@ async def event_ready():
 
 @bot.event
 async def event_message(ctx):
+	#Sets input to be case insensitive
 	ctx.content=ctx.content.casefold()
-	"""
-	Checks if the bot is the author of event_message and discards input if true.
-	"""
+	
+	#Checks if the bot is the author of event_message and discards input if true.
 	if ctx.author.name.casefold() == os.environ['BOT_NICK'].casefold():
 		return
 
 	await bot.handle_commands(ctx)
 
-	if 'hello' in ctx.content.casefold():
+	#This responds to ALL messages containing "hello" anywhere in the message. There should probably be a cooldown or limitation on what registers.
+	if 'hello' in ctx.content:
 		await ctx.channel.send(f"Hi, @{ctx.author.name}!")
 
 @bot.command(name='alive')
@@ -61,8 +62,8 @@ async def guild(ctx):
 @bot.command(name='drg')
 async def drg(ctx):
 	await ctx.channel.send("Noelle mains Engineer, but plays any class that's needed for her groups! She usually hangs out in Drop Pod #247 in the stream's Discord, but is also sometimes in Pods #24 or #27 in the official DRG Discord!")
-	await ctx.send("Any time there are open slots in Noelle's team, anyone is free to join the dig through Discord or Steam! Non-duplicate late joins is sometimes enabled, though!")
-	await ctx.send("Rock and Stone!")
+	await ctx.channel.send("Any time there are open slots in Noelle's team, anyone is free to join the dig through Discord or Steam! Non-duplicate late joins is sometimes enabled, though!")
+	await ctx.channel.send("Rock and Stone!")
 
 if __name__=="__main__":
 	bot.run()
