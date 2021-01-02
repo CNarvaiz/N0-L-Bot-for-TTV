@@ -55,7 +55,7 @@ async def info(ctx):
 async def discord(ctx):
 	await ctx.channel.send("Join us on discord and chat about stream, gaming, or anything else your sticky, nerdy heart desires! discord.gg/bmBMGKvDzb.")
 
-@bot.command(name='guild')
+@bot.command(name='wow')
 async def guild(ctx):
 	await ctx.channel.send("Join our Horde guild on Dawnbringer, 'Noelle's Nerd Pit'! For those not on Dawnbringer, we also have a Horde Community with auto-accept called 'Noelles Nerd Pit'!")
 
@@ -64,6 +64,9 @@ async def drg(ctx):
 	await ctx.channel.send("Noelle mains Engineer, but plays any class that's needed for her groups! She usually hangs out in Drop Pod #247 in the stream's Discord, but is also sometimes in Pods #24 or #27 in the official DRG Discord!")
 	await ctx.channel.send("Any time there are open slots in Noelle's team, anyone is free to join the dig through Discord or Steam! Non-duplicate late joins is sometimes enabled, though!")
 	await ctx.channel.send("Rock and Stone!")
-
+@bot.command(name='build')
+async def build(ctx):
+	await ctx.channel.send("DocHolyday's current build is Warforged 20 SWF Hammer/Axe Artificer, using Renegade Mastermaker T5s for leveling!")
+	
 if __name__=="__main__":
 	bot.run()
