@@ -66,7 +66,7 @@ async def drg(ctx):
 	await ctx.channel.send("Rock and Stone!")
 @bot.command(name='build')
 async def build(ctx):
-	await ctx.channel.send("DocHolyday's current build is a Dwarven Artificer14/Fighter6 with THF Dwarven Axe!")
+	await ctx.channel.send("DocHolyday's current build is a Dwarven Rogue 13/Ranger 6/Fighter1, throwing sharp things at people!")
 	
 if __name__=="__main__":
 	bot.run()
