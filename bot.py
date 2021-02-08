@@ -53,7 +53,7 @@ async def info(ctx):
 
 @bot.command(name='discord')
 async def discord(ctx):
-	await ctx.channel.send("Join us on discord and chat about stream, gaming, or anything else your sticky, nerdy heart desires! discord.gg/bmBMGKvDzb.")
+	await ctx.channel.send("Join us on discord and chat about stream, gaming, or anything else your sticky, nerdy heart desires! discord.gg/bmBMGKvDzb")
 
 @bot.command(name='wow')
 async def guild(ctx):
