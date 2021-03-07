@@ -66,7 +66,7 @@ async def drg(ctx):
 	await ctx.channel.send("Rock and Stone!")
 @bot.command(name='build')
 async def build(ctx):
-	await ctx.channel.send("DocHolyday is currently working on racial lives! Current build is a Dwarven THF Fighter 20 with Kensei and Falconry!")
+	await ctx.channel.send("DocHolyday is currently working on racial lives! Current build is a pure Artificer Tiefling!")
 	await ctx.channel.send("A GDrive folder of builds can be found at the link labelled 'Noelles Builds' below stream!")
 	
 if __name__=="__main__":
